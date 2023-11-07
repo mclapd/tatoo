@@ -1,13 +1,13 @@
 // import images
 import Logo from "../public/images/header/logo.svg";
-import GalleryImg1 from "../public/images/gallery/1.png";
-import GalleryImg2 from "../public/images/gallery/2.png";
-import GalleryImg3 from "../public/images/gallery/3.png";
-import GalleryImg4 from "../public/images/gallery/4.png";
-import GalleryImg5 from "../public/images/gallery/5.png";
-import GalleryImg6 from "../public/images/gallery/6.png";
-import GalleryImg7 from "../public/images/gallery/7.png";
-import GalleryImg8 from "../public/images/gallery/8.png";
+// import GalleryImg1 from "../public/images/gallery/1.png";
+// import GalleryImg2 from "../public/images/gallery/2.png";
+// import GalleryImg3 from "../public/images/gallery/3.png";
+// import GalleryImg4 from "../public/images/gallery/4.png";
+// import GalleryImg5 from "../public/images/gallery/5.png";
+// import GalleryImg6 from "../public/images/gallery/6.png";
+// import GalleryImg7 from "../public/images/gallery/7.png";
+// import GalleryImg8 from "../public/images/gallery/8.png";
 import QuoteImg from "../public/images/testimonial/quote.svg";
 // import icons
 import { GrFacebookOption } from "react-icons/gr";
@@ -68,50 +68,50 @@ export const galleryData = {
   btnIcon: <IoMdArrowForward />,
   images: [
     {
-      src: GalleryImg1,
-      original: GalleryImg1,
+      src: "/images/gallery/1.png",
+      original: "/images/gallery/1.png",
       width: 465,
       height: 412,
     },
     {
-      src: GalleryImg2,
-      original: GalleryImg2,
+      src: "/images/gallery/2.png",
+      original: "/images/gallery/2.png",
       width: 465,
       height: 540,
     },
     {
-      src: GalleryImg3,
-      original: GalleryImg3,
+      src: "/images/gallery/3.png",
+      original: "/images/gallery/3.png",
       width: 465,
       height: 412,
     },
     {
-      src: GalleryImg4,
-      original: GalleryImg4,
+      src: "/images/gallery/4.png",
+      original: "/images/gallery/4.png",
       width: 465,
       height: 540,
     },
     {
-      src: GalleryImg5,
-      original: GalleryImg5,
+      src: "/images/gallery/5.png",
+      original: "/images/gallery/5.png",
       width: 465,
       height: 540,
     },
     {
-      src: GalleryImg6,
-      original: GalleryImg6,
+      src: "/images/gallery/6.png",
+      original: "/images/gallery/6.png",
       width: 464,
       height: 412,
     },
     {
-      src: GalleryImg7,
-      original: GalleryImg7,
+      src: "/images/gallery/7.png",
+      original: "/images/gallery/7.png",
       width: 465,
       height: 540,
     },
     {
-      src: GalleryImg8,
-      original: GalleryImg8,
+      src: "/images/gallery/8.png",
+      original: "/images/gallery/8.png",
       width: 465,
       height: 412,
     },
