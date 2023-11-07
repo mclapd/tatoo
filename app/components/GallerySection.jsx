@@ -2,20 +2,26 @@
 
 import { useState } from "react";
 import { galleryData } from "../data";
-import Lightbox from "react-18-image-lightbox";
-import "react-18-image-lightbox/style.css";
+// import Lightbox from "react-18-image-lightbox";
+// import "react-18-image-lightbox/style.css";
+import Lightbox from "yet-another-react-lightbox";
 import { motion } from "framer-motion";
 import { fadeIn } from "../effects/variants";
 import Image from "next/image";
 import Link from "next/link";
 import { Gallery } from "react-grid-gallery";
+import "yet-another-react-lightbox/styles.css";
+
+const slides = galleryData.images.map(({ original, width, height }) => ({
+  src: original,
+  width,
+  height,
+}));
 
 const GallerySection = () => {
   const [index, setIndex] = useState(0);
   const [isOpen, setIsopen] = useState(false);
   const { title, btnText, btnIcon, images } = galleryData;
-
-  console.log(index);
 
   return (
     <section className="bg-[#f9f9f9] section relative mt-[40px] lg:mt-0">
@@ -39,23 +45,18 @@ const GallerySection = () => {
       >
         <Gallery
           images={images}
-          onClick={() => setIsopen(true)}
-          enableImageSelection={false}
+          onClick={(index) => {
+            setIsopen(true);
+            setIndex(index);
+          }}
         />
         {isOpen && (
           <Lightbox
-            mainSrc={images[index].original}
-            nextSrc={images[(index + 1) % images.length].original}
-            prevSrc={
-              images[(index + images.length - 1) % images.length].original
-            }
-            onCloseRequest={() => setIsopen(false)}
-            onMovePrevRequest={() =>
-              setIndex((index + images.length - 1) % images.length)
-            }
-            onMoveNextRequest={() =>
-              setIndex((index + images.length + 1) % images.length)
-            }
+            slides={slides}
+            styles={{ container: { backgroundColor: "rgba(0,0,0,.9" } }}
+            open={index >= 0}
+            index={index}
+            close={() => setIsopen(false)}
           />
         )}
       </motion.div>
