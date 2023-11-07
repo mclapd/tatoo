@@ -2,13 +2,9 @@
 
 import { useState } from "react";
 import { galleryData } from "../data";
-// import Lightbox from "react-18-image-lightbox";
-// import "react-18-image-lightbox/style.css";
 import Lightbox from "yet-another-react-lightbox";
 import { motion } from "framer-motion";
 import { fadeIn } from "../effects/variants";
-import Image from "next/image";
-import Link from "next/link";
 import { Gallery } from "react-grid-gallery";
 import "yet-another-react-lightbox/styles.css";
 

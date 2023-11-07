@@ -8,7 +8,7 @@ import Logo from "../public/images/header/logo.svg";
 // import GalleryImg6 from "../public/images/gallery/6.png";
 // import GalleryImg7 from "../public/images/gallery/7.png";
 // import GalleryImg8 from "../public/images/gallery/8.png";
-import QuoteImg from "../public/images/testimonial/quote.svg";
+// import QuoteImg from "../public/images/testimonial/quote.svg";
 // import icons
 import { GrFacebookOption } from "react-icons/gr";
 import { IoMdArrowForward } from "react-icons/io";
@@ -127,14 +127,14 @@ export const interviewData = {
 
 export const testimonialData = [
   {
-    quoteImg: QuoteImg,
+    quoteImg: "/images/testimonial/quote.svg",
     message:
       "The entire team is extremely kind and friendly. They're fantastic. They're great at what they do! And it's unique.They will properly consult with you.",
     name: "Jack Geoffrey",
     occupation: "Tattoo Artist",
   },
   {
-    quoteImg: QuoteImg,
+    quoteImg: "/images/testimonial/quote.svg",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam culpa asperiores officia natus dignissimos autem possimus molestias aperiam?",
     name: "Douglas Hane",

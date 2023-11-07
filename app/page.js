@@ -23,7 +23,7 @@ export default function Home() {
       <Contact />
       <Footer />
       <Copyright />
-      <div className="h-[4000px]"></div>
+      <div className="h-[100px]"></div>
     </main>
   );
 }
